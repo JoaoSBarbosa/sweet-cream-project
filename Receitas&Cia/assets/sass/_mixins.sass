@@ -1,0 +1,32 @@
+@use 'variables'
+
+@mixin max-container
+  margin: auto
+  max-width: calc( 100% - 20px)
+  
+// repetição de códigos que será usada varias vezes
+@mixin container
+  max-width: variables.$container-width
+  //padding: 1.5rem 0
+  margin: 0 auto
+@mixin flex-display-row
+  display: flex
+  justify-content: center
+  flex-direction: row
+
+@mixin flex-display-column
+  display: flex
+  align-items: center
+  flex-direction: column
+
+@mixin banner-home-img($img)
+  background-image: url('../img/#{$img}')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  filter: grayscale(0%)
+  transition: .6s
+  &:hover
+    filter: grayscale(10%)  
+    background-image: linear-gradient(rgba(0,0,0, .5),rgba(0,0,0,.5)), url('../img/#{$img}')
+

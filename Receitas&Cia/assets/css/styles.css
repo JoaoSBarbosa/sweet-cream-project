@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  transition: 0.6s;
+}
+
+.header {
+  height: 100px;
+  border: 3px solid green;
+}
+
+.container {
+  margin: auto;
+  max-width: calc(100% - 20px);
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid red;
+}
+.container .header-container-logo {
+  display: flex;
+  align-items: center;
+}
+.container .header-container-logo img {
+  width: 200px;
+}
+.container .header-container-menu {
+  display: flex;
+  align-items: center;
+}
+.container .header-container-menu-nav ul {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  list-style: none;
+  display: flex;
+}
+.container .header-container-menu-nav ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px;
+  color: #000000;
+}
+.container .header-container-menu-nav ul a:hover {
+  background-color: #f77825;
+  color: #ffffff;
+}
+
+#banner-home {
+  background-image: url("../img/../img/banner2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0%);
+  transition: 0.6s;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+#banner-home:hover {
+  filter: grayscale(10%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/../img/banner2.jpg");
+}
+#banner-home:hover {
+  filter: grayscale(20%);
+}
+#banner-home .column {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+#banner-home .column .banner-column-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+#banner-home .column .banner-column-headline i {
+  margin-top: 3rem;
+  font-size: 5rem;
+}
+#banner-home .column .banner-column-headline h1, #banner-home .column .banner-column-headline h2 {
+  margin: 0px;
+  padding: 0px;
+}
+#banner-home .column .banner-column-headline h1 {
+  font-size: 6.5rem;
+  color: #ffffff;
+  text-shadow: 0px 1px 0px #000000;
+  font-weight: 900px;
+  font-family: "Lobster", cursive;
+  text-align: center;
+}
+
+.title-cont {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 20px 0px;
+}
+
+.decor-title {
+  width: 100px;
+  height: 6px;
+  background-color: #f77825;
+  margin: 0;
+  padding: 0;
+}
+
+.article-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: 1320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article-container-destaques {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 1100px;
+  padding: 10px;
+}
+.article-container-destaques a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+}
+.article-container-destaques-semana, .article-container-destaques-other {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+.article-container-destaques-semana a {
+  display: block;
+}
+.article-container-destaques #card-1,
+.article-container-destaques #card-2 {
+  max-width: 400px;
+  margin: 10px;
+}
+.article-container-destaques #card-1:hover,
+.article-container-destaques #card-2:hover {
+  box-shadow: 0px 5px 13px black;
+}
+.article-container-destaques #card-1 {
+  justify-content: flex-start;
+}
+.article-container-destaques #card-1 {
+  justify-content: right;
+}
+.article-container-destaques #card-1 a {
+  text-decoration: none;
+}
+.article-container-destaques-other {
+  justify-content: space-between;
+}
+.article-container-destaques-other #card-3,
+.article-container-destaques-other #card-4,
+.article-container-destaques-other #card-5,
+.article-container-destaques-other #card-6 {
+  width: 320px;
+  height: 200px;
+  display: flex;
+  margin: 2rem 10px;
+}
+.article-container-destaques-other #card-3:hover,
+.article-container-destaques-other #card-4:hover,
+.article-container-destaques-other #card-5:hover,
+.article-container-destaques-other #card-6:hover {
+  box-shadow: 0px 5px 13px black;
+}
+.article-container-destaques .categoria {
+  margin: 0px;
+  padding: 6px;
+  background-color: #413726;
+  color: white;
+}
+.article-container-destaques .other-img-card {
+  flex: 1;
+  height: auto;
+}
+.article-container-destaques .other-info-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fd8d32;
+}
+.article-container-destaques .other-img-card img {
+  height: 100%;
+  object-fit: cover;
+}
+.article-container-destaques .title-info {
+  font-size: 1rem;
+  font-weight: 900;
+}
+.article-container-destaques img {
+  width: 100%;
+}
+
+.w3-container {
+  background-color: #fd8d32;
+}
+
+.imagem-card {
+  height: 300px;
+  width: 400px;
+  background-color: #60b99a;
+  background-position: center;
+  background-size: cover;
+}
+
+#img-c-1 {
+  background-image: url("../img/panetone (2).jpg");
+}
+
+#img-c-2 {
+  background-image: url("../img/img-c (2).jpg");
+}
+
+#display-b {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #e2e2e2;
+  border-radius: 20px;
+  margin-top: 1rem;
+}
+
+.display-b-icon {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.display-b-icon i {
+  font-size: 1.6rem;
+}
+
+.display-b-info a {
+  border: 3px solid yellow;
+  background-color: #000000;
+  border: 1px solid #020202;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 6px 25px;
+  margin: 1rem;
+  text-transform: uppercase;
+  transition: 0.6s;
+}
+.display-b-info a:hover {
+  background-color: #463b2f;
+  border: 1px solid #5a4e3c;
+  color: white;
+}
+
+.btn-scrip {
+  border: 3px solid yellow;
+  background-color: #413726;
+  border: 1px solid #5a4e3c;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 35px;
+  margin: 1rem;
+  text-transform: uppercase;
+}
+.btn-scrip:hover {
+  background-color: #000000;
+  border: 1px solid #5a4e3c;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

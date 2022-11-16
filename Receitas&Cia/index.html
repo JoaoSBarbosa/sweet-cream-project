@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!---W3-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!---Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--CSS-->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="assets/img/favicon_transparent_32x32.png" type="image/x-icon">
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <!--TItulo-->
+  <title>Sweet cream Receitas</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <!--LOGO-->
+      <div class="header-container-logo">
+        <a href="index.html"><img src="./assets/img/logo-default_transparent_1000x1000.png" alt=""></a>
+      </div>
+      <!--MENU-->
+      <div class="header-container-menu">
+        <nav class="header-container-menu-nav">
+          <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">receitas</a></li>
+            <li><a href="">contato</a></li>
+            <li><a href="">faq</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="banner-home">
+    <div class="column">
+      <div class="banner-column-headline">
+        <h1>Sweet Cream</h1>
+        <h2>Receitas faceis e saborosas</h2>
+        <i class="fa-solid fa-utensils"></i>
+      </div>
+      <!--<div class="banner-column-option">
+        .....
+      </div>-->
+    </div>
+  </section>
+
+  <article class="article-container">
+
+    <div class="article-container-destaques">
+      <div class="title-cont">
+        <h3>Destaques da semana</h3>
+        <div class="decor-title"></div>
+      </div>
+      <div class="article-container-destaques-semana">
+
+        <div class="destaques-card-item w3-card-4" id="card-1">
+          <a href="">
+            <div class="imagem-card" id="img-c-1"></div>
+          </a>
+          <div class="w3-center desc-card">
+            <p class="categoria">Doces e sobremesas</p>
+            <div class="w3-container">
+              <p class="title-info">Massa</p>
+              <p>Por:<a href="" class="ref">João barbosa</a></p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="destaques-card-item w3-card-4" id="card-2">
+          <a href="">
+            <div class="imagem-card" id="img-c-2"></div>
+          </a>
+          <div class="w3-center desc-card">
+            <p class="categoria">Doces e sobremesas</p>
+            <div class="w3-container">
+              <div id="display-b">
+                <div class="display-b-icon">
+                  <div class="clock">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>10min</p>
+                  </div>
+                  <div class="porcao">
+                    <i class="fa-solid fa-utensils"></i>
+                    <p>5 porções</p>
+                  </div>
+                </div>
+                <div class="display-b-info">
+                  <a href="/">ver receita</a>
+                </div>
+              </div>
+
+              <p class="title-info">Massa</p>
+              <p>Por:<a href="" class="ref">João barbosa</a></p>
+              <button onclick="mouseOver()" class="btn-scrip">Detalhes</button>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="title-cont">
+        <h2>Ultimos destaques</h2>
+        <div class="decor-title"></div>
+      </div>
+
+      <div class="article-container-destaques-other">
+
+        <div class="destaques-card-item w3-card-4" id="card-3">
+          <div class="other-img-card">
+            <img src="assets/img/frutos-mar (1).jpg" alt="">
+          </div>
+          <div class="w3-center other-info-card">
+            <p class="categoria">Frutos do Mar</p>
+            <div class="w3-container">
+              <p class="title-info">Lagosta</p>
+              <p>por:<a href="" class="ref">João barbosa</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="destaques-card-item w3-card-4" id="card-3">
+          <div class="other-img-card">
+            <img src="assets/img/frutos-mar (2).jpg" alt="">
+          </div>
+          <div class="w3-center other-info-card">
+            <p class="categoria">Frutos do Mar</p>
+            <div class="w3-container">
+              <p class="title-info">Camarão</p>
+              <p>Por:<a href="" class="ref">João barbosa</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="destaques-card-item w3-card-4" id="card-3">
+          <div class="other-img-card">
+            <img src="assets/img/sobremesa (2).jpg" alt="">
+          </div>
+          <div class=" w3-center other-info-card">
+            <p class="categoria">Doces e sobremesas</p>
+            <div class="w3-container">
+              <p class="title-info">Torta</p>
+              <p>Por:<a href="" class="ref">João barbosa</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="destaques-card-item w3-card-4" id="card-4">
+          <div class="other-img-card">
+            <img src="assets/img/img-c (2).jpg" alt="">
+          </div>
+          <div class="w3-center other-info-card">
+            <p class="categoria">Massas</p>
+            <div w3-container>
+              <p class="title-info">Macarrão</p>
+              <p>Por:<a href="" class="ref">João barbosa</a></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="destaques-card-item w3-card-4" id="card-5">
+          <div class="other-img-card">
+            <img src="assets/img/hamburgue.jpg" alt="">
+          </div>
+          <div class="w3-center other-info-card">
+            <p class="categoria">Food</p>
+            <div class="w3-container">
+              <p class="title-info">Hamburguer</p>
+              <p>Por:<a href="" class="ref">João barbosa</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="destaques-card-item w3-card-4" id="card-6">
+          <div class="other-img-card">
+            <img src="assets/img/panetone.jpg" alt="">
+          </div>
+          <div class="w3-center other-info-card">
+            <p class="categoria">Doces e sobremesas</p>
+            <div class="w3-container">
+              <p class="title-info">Panetone</p>
+              <p>Por:<a href="" class="ref">João barbosa</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+  </article>
+
+
+
+
+  <footer>
+    Testando footer
+  </footer>
+  <script defer src="assets/js/script.js"></script>
+</body>
+
+</html>
