@@ -10,54 +10,51 @@ body
   margin: 0
   padding: 0
   transition: .6s
-.header
-  
-  height: 100px
-  border: 3px solid green
+
+// Cabeçalho
+
 .container
-  @include mixins.max-container
+
   display: flex
+  align-items: center
   justify-content: space-between
-  border: 3px solid red
-
+  max-height: 13vh
+ 
   .header-container-logo
-    display: flex
-    align-items: center
+  
+    height: 10vh
     & img
-      width: 200px
-
-  .header-container-menu
+      height: 100%
+     
+  .header-container-menu-nav
     display: flex
     align-items: center
-    &-nav ul
 
-      margin: 0
-      padding: 0
-      align-items: center
+    & li
+      padding: 10px 4.75rem
       list-style: none
-      display: flex
 
-      & a
-        text-decoration: none
-        text-transform: uppercase
-        padding: 20px
-        color: variables.$text-primary-color
-        &:hover
-          background-color: variables.$bg-color-1
-          color: variables.$text-secunday-color
+    & a
+      font-size: 1.3rem
+      text-decoration: none
+      text-transform: uppercase
+      padding: 20px
+      
+      color: variables.$text-primary-color
+      &:hover
+        background-color: variables.$bg-color-1
+        color: variables.$text-secunday-color
 
-  // Banner
+// Seção do Banner
 #banner-home
   @include mixins.banner-home-img('../img/banner2.jpg')
-  height: 70vh
+  height: 60vh
   display: flex
   justify-content: center
-  &:hover
-    filter: grayscale(20%)
+
   .column
     flex-direction: column
     display: flex
-    //align-items: center
     justify-content: center
 
     .banner-column-headline
@@ -66,20 +63,22 @@ body
       align-items: center
       justify-content: center
       flex: 1
-      //max-width: 400px
       & i
         margin-top: 3rem
         font-size: 5rem
+        color: variables.$bg-color-1
       & h1,h2
         margin: 0px
         padding: 0px
+        color: variables.$text-secunday-color
+        
+
       & h1
         font-size: variables.$font-size
-        color: variables.$text-secunday-color
-        text-shadow: 0px 1px 0px variables.$text-primary-color
         font-weight: 900px
         font-family: 'Lobster', cursive
         text-align: center
+        color: variables.$bg-color-1
 .title-cont
   display: flex
   flex-direction: column
@@ -91,58 +90,69 @@ body
   background-color: variables.$bg-color-1
   margin: 0
   padding: 0
+
+// Seção principal
+
 .article-container
 
   @include mixins.container
   margin-top: 2rem
-  //background-color: variables.$bg-color-1
   max-width: variables.$container-width
   display: flex
   flex-direction: column
   align-items: center
 
   &-destaques
-    //border: 6px solid green
     display: flex
     flex-direction: column
-    //align-items: center
     flex-wrap: wrap
     width: 1100px
     padding: 10px
-    & a
-      text-decoration: none
-      font-size: 1.3rem
-      color: white
-
-    
 
     &-semana,
     &-other
-      
       display: flex
       flex-wrap: wrap
       align-items: center
       justify-content: space-between
       margin-bottom: 6rem
-    &-semana a
-      display: block
-      
+
+    // Seção destaques da semana  
     #card-1,
     #card-2
-      max-width: 400px
-      margin: 10px
       &:hover
         box-shadow: 0px 5px 13px black
-    #card-1
-      justify-content: flex-start
-    #card-1
-      justify-content: right
-  
-      & a
-        text-decoration: none
-      
+      & img
+        width: 100%
+    
+    & .imagem-card
+        height: 300px
+        width: 500px
+        background-position: center
+        background-size: cover
+
+    #img-c-1,
+    #img-c-2
+      background-size: cover
+      background-position: center
+      background-repeat: no-repeat
+    #img-c-2
+      background-image: url('../img/img-c (2).jpg')
+    #img-c-1
+      background-image: url('../img/panetone (2).jpg')
+   
+    .text-destaque-card
+      padding-bottom: 1rem
+
+    & a
+      text-decoration: none
+      text-transform: uppercase
+      font-size: .78rem
+      color: white
+
+    // Seção destaques de outras semanas
+
     &-other
-      //border: 3px solid yellow //***************
       justify-content: space-between
 
       #card-3,
@@ -150,111 +160,95 @@ body
       #card-5,
       #card-6
         width: 320px
-        height: 200px
+        height: 210px
         display: flex
         margin: 2rem 10px
-       
+
         &:hover
           box-shadow: 0px 5px 13px black
-        
-    .categoria
-      margin: 0px
-      padding: 6px
-      background-color: variables.$bg-color-2
-      color: #ffff
-    .w3-container
-      //border: 3px solid cyan
-      //padding: 0px
+       
+      // imagem
+      .other-img-card
+        flex: 1
+        height: auto
 
-    .other-img-card
+        & img
+          height: 100%
+          width: 100%
+          object-fit: cover
 
-      //width: 200px
-      flex: 1
-      height: auto
-      //background-color: red
-    .other-info-card
-      //border: 3px solid green
-      flex: 1
-      display: flex
-      flex-direction: column
-      width: 100%
-      background-color: variables.$bg-color-5
+      // textos
+      .other-info-card
+        flex: 1
+        display: flex
+        flex-direction: column
+        width: 100%
+        background-color: variables.$bg-color-5
 
-    .other-img-card img
-      height: 100%
-      object-fit: cover
- 
     .title-info
       font-size: 1rem
-      //border: 2px solid cyan
-      //color: variables.$bg-color-3
       font-weight: 900
 
-    & img
-      width: 100%
+    .categoria
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 0px
+      padding: 6px
+      height: 60px
+      background-color: variables.$bg-color-2
+      color: #ffff
+      font-size: 1.2rem
+      
 
 .w3-container
-  //background-color: variables.$bg-color-5
   background-color: #fd8d32
-    
-.imagem-card
-  height: 300px
-  width: 400px
-  background-color: variables.$bg-color-4
 
-  background-position: center
-  background-size: cover
+// Seção modal
+header .w3-button,
+span
+  color: variables.$bg-color-1
+  font-size: 2.1rem
+span
+  font-size: 1.5rem
 
-#img-c-1
-  background-image: url('../img/panetone (2).jpg')
-#img-c-2
-  background-image: url('../img/img-c (2).jpg')
-#display-b
+.modal-flex
   display: flex
   justify-content: space-between
-  flex-direction: column
-  //display: none
-  background-color: #e2e2e2
-  border-radius: 20px
-  margin-top: 1rem
-.display-b-icon
-  display: flex
-  padding-top: 20px
   align-items: center
-  justify-content: space-evenly
+  padding: 15px
   & i
-    font-size: 1.6rem
-  
-  
-.display-b-info a
-  border: 3px solid yellow
-  background-color: #000000
-  border: 1px solid #020202
-  color: #ffff
-  border-radius: 10px
-  display: inline-block
-  text-decoration: none
-  padding: 6px 25px
-  margin: 1rem
-  text-transform: uppercase
-  transition: .6s
-  &:hover
-    background-color: #463b2f
-    border: 1px solid #5a4e3c
-    color: #ffff
-    
+    font-size: 2rem
+@media (min-width: 993px)
+.w3-modal-content
+  width: 300px
 .btn-scrip
-  border: 3px solid yellow
-  background-color: #413726
-  border: 1px solid #5a4e3c
-  color: #ffff
   border-radius: 10px
-  display: inline-block
-  text-decoration: none
-  padding: 10px 35px
-  margin: 1rem
-  text-transform: uppercase
-  &:hover
-    background-color: #000000
-    border: 1px solid #5a4e3c
+
+.container-footer
+  @include mixins.flex-display-row
+  padding: 1rem 2rem
+  background-color: #000000
+  height: 30vh
+  color: #ffff
+  justify-content: space-around
+  & h3
+   
+  & i
     color: #ffff
+    font-size: 1.5rem
+  & a
+    text-decoration: none
+    display: block
+.width
+  height: 3px
+  width: 50px
+  background-color: variables.$bg-color-5
+  margin-bottom: 2rem
+#redes-sociais
+  display: flex
+  justify-content: space-between
+  
+
+.footer-banner
+  padding: 10px
